@@ -28,6 +28,7 @@ public class RabbitMqPublisher {
 		LOGGER.info(String.format("message :-> %s", message));
 
 		template.convertAndSend(exchange, routingKey, message);
+
 	}
 
 }
